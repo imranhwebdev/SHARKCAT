@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Handjet:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Quicksand:wght@300..700&family=Sigmar+One&display=swap');
+html, html body{
+    overflow-x: hidden;
+}
+  
+body {
+    font-family: "Kanit", sans-serif;
+    @include font-22;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #141515;
+    color: $white;
+    background-image: url('../img/body-bg.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+};
+
+h1{
+    @include font-100
+}
+
+h2{
+    @include font-72;
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3{
+    @include font-40
+}
+
+h4{
+    @include font-40
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+figure{
+    margin-bottom: 0;
+}
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition;
+}
+
+input,
+textarea,
+button {
+    padding: 10px 25px;
+    outline: none;
+    @include transition;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: #f3f3f3;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    @include transition;
+}
+
+
+/*Hide number spin button*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container {
+   max-width: 1370px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.social-links{
+    li{
+        display: inline-block;
+        margin-right: 23px;
+        a {
+            display: flex;
+            width: 63px;
+            height: 63px;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.10);
+            background: #0E0E0E;
+            backdrop-filter: blur(7px);
+            color: #fff;
+            img {
+                max-width: 24px;
+            }
+        }
+    }
+}
+
+.base-btn{
+    border-radius: 50px;
+    background: var(--Primary, #00F6FF);
+    padding: 16px 32px;
+    box-shadow: 4px 4px 0px 0px #000;
+    color: #0E0E0D;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%; 
+    text-transform: uppercase;
+    &:hover{
+
+        background: $_1E1929;
+        color: $white;
+    }
+}
+

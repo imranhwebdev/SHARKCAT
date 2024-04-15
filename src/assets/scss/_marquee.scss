@@ -1,0 +1,59 @@
+.marquee {
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.10);
+    background: lightgray 0% 0% / 100px 100px repeat, #0E0E0E;
+    backdrop-filter: blur(7px);
+    border-left: none;
+    border-right: none;
+    padding: 14px 0;
+    width: 110%;
+    left: -5%;
+    position: relative;
+    z-index: 99;
+    overflow-x: hidden;
+    @include sm {
+        padding: 20px 0;
+    }
+    .rfm-initial-child-container {
+        gap: 32px;
+        overflow: hidden;
+        .rfm-child {
+            figure {
+                img {
+                    max-width: 421px;
+                }
+            }
+        }
+        .rfm-marquee-container {
+            height: 65px;
+        }
+    }
+}
+
+.marquee.Two {
+    transform: rotate(5.935deg) translateY(-100px);
+    @include mmd{
+        transform: rotate(0) translateY(0);
+    }
+    .rfm-initial-child-container {
+        .rfm-child {
+            figure {
+                img {
+                    max-width: 208px;
+                }
+            }
+        }
+    }
+}
+
+.marque-area {
+    position: absolute;
+    bottom: -175px;
+    left: 0;
+
+    .rfm-marquee {
+       @include sm{
+            height: 80px;
+       }
+    }
+}
