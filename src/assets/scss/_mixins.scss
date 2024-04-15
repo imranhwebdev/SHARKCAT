@@ -73,8 +73,8 @@
 }
 
 
-@mixin font-72{
-    font-size: 72px;
+@mixin font-84{
+    font-size: 84px;
     line-height: normal;
     @include xxl {
         font-size:65px;

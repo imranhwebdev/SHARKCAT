@@ -31,8 +31,7 @@ h1{
 }
 
 h2{
-    @include font-72;
-    color: $white;
+    @include font-84;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -109,15 +108,14 @@ input::-webkit-inner-spin-button {
         margin-right: 23px;
         a {
             display: flex;
-            width: 63px;
-            height: 63px;
+            width: 80px;
+            height: 80px;
             align-items: center;
             justify-content: center;
             font-size: 23px;
-            border-radius: 8px;
-            border: 2px solid rgba(255, 255, 255, 0.10);
-            background: #0E0E0E;
-            backdrop-filter: blur(7px);
+            border-radius: 64.615px;
+            background: var(--Primary, #00F6FF);
+            box-shadow: 5.169px 5.169px 0px 0px #000;
             color: #fff;
             img {
                 max-width: 24px;

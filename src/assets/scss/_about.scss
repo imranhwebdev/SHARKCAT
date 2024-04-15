@@ -1,0 +1,20 @@
+.about{
+    padding-top: 119px;
+    padding-bottom: 120px;
+    & .player-wrapper{
+        position: relative;
+        margin-top: 55px;
+    }
+}
+
+.react-player__preview{
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    @include sm{
+        height: 300px !important; 
+    }
+    @include ssm{
+        height: 200px;
+    }
+}

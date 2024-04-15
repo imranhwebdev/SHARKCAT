@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import { Link, animateScroll as scroll} from 'react-scroll';
-// import { FaTwitter, FaPaperPlane} from "react-icons/fa";
 import logo from '../assets/img/Logo.svg'
 export default function Header() {
   const [isMenu, setIsMenu] = useState(false);
@@ -56,7 +55,7 @@ const  twitter = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
             
             <ul className="social-links d-md-none">
               <li><a href="https://google.com">{telegram}</a></li>
-              <li><a href="https://google.com"><twitter /></a></li>
+              <li><a href="https://google.com">{twitter}</a></li>
             </ul>
           </nav>
           <div className="heading-actions d-flex align-items-center flex-wrap">

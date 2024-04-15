@@ -2,12 +2,25 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import { Col, Container, Row } from 'react-bootstrap'
 import heroRImg from '../assets/img/heroRightImg.png';
+import sociallogo3 from '../assets/img/sociallogo3.svg';
+import sociallogo4 from '../assets/img/sociallogo4.svg';
 export default function Banner(){
     useEffect(() => {
         AOS.init({
           duration: 1000,
         });
       }, []);
+
+      const socialLinks = [
+        { 
+            icon: sociallogo3, 
+            href: 'https://google.com' 
+        },
+        { 
+            icon: sociallogo4, 
+            href: 'https://google.com' 
+        },
+    ];
     return(
         <div className="banner">
             <div className="banner-wrapper">
@@ -19,6 +32,11 @@ export default function Banner(){
                                 <p data-aos="fade-up" data-aos-duration="1400">Sharkcat is a playful and innovative memecoin on the Solana network, featuring a cat-themed design and a vibrant community of meme enthusiasts.</p>
                                 <div className="btn-with-social" data-aos="fade-up" data-aos-duration="1600" data-aos-offset="0">
                                     <a href="#" className="base-btn">Buy Now</a>
+                                    <ul className="social-links mt-4 mt-sm-0">
+                                        {socialLinks.map((link, index) => (
+                                            <li key={index}><a href={link.href} target="_blank"><img src={link.icon} alt="" /></a></li>
+                                        ))}
+                                    </ul>
                                 </div>
                             </div>
                         </Col>

@@ -1,13 +1,10 @@
 import { React } from 'react'
 import Header from './components/Header'
 import Banner from './components/Banner'
-// import Partner from './components/Partner'
-// import MarqueeOne from './components/MarqueeOne'
-// import About from './components/About'
-// import Tokenomics from './components/Tokenomics'
-// import HowtoBuy from './components/HowtoBuy'
-// import Faq from './components/Faq'
-// import Footer from './components/Footer'
+import About from './components/About'
+import MarqueeOne from './components/MarqueeOne'
+import Tokenomics from './components/Tokenomics'
+import Comunity from './components/Comunity'
 
 function App() {
 
@@ -15,13 +12,10 @@ function App() {
     <>
       <Header />
       <Banner />
-      {/* <MarqueeOne />
-      <Partner />
       <About />
       <Tokenomics />
-      <HowtoBuy />
-      <Faq /> */}
-      {/* <Footer /> */}
+      <MarqueeOne />
+      <Comunity />
     </>
   )
 }

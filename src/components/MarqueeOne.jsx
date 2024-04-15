@@ -1,5 +1,5 @@
 import React from 'react'
-import marqueeImg from '../assets/img/mixiThemAll.png';
+import marqueeImg from '../assets/img/marqueeImg.png';
 import Marquee from "react-fast-marquee";
 export default function MarqueeOne() {
     const marqueeImgs = [

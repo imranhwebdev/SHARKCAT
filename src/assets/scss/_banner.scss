@@ -1,13 +1,14 @@
 .banner {
     position: relative;
     z-index: 1;
-    padding-top: 280px;
-    padding-bottom: 280px;
+    padding-top: 272px;
+    padding-bottom: 176px;
     background-image: url(../img/heroBG.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: top center;
     background-repeat: no-repeat;
     @include mmd{
+        background-size: cover;
         padding-top: 150px;
         padding-bottom: 320px;
     }
@@ -21,8 +22,13 @@
         }
         .social-links li {
             margin:0 10px;
+            a{
+                border-radius: 50px;
+                background: #00F6FF;
+                box-shadow: 4px 4px 0px 0px #000;
+            }
             a:hover{
-                border-color: $white;
+                background: #fff;
             }
         }
     }
@@ -30,14 +36,12 @@
         h1{
             color: $white;
             text-shadow: 4px 4px 0px #000;
-            font-size: 100px;
             line-height: 110%; 
             text-transform: uppercase;
             margin-bottom: 20px;
         }
         p{
             color: #E0DBDB;
-            font-family: Kanit;
             @include font-22;
             font-weight: 400;
             line-height: 150%;
