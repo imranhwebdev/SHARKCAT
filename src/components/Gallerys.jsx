@@ -3,17 +3,17 @@ import AOS from 'aos';
 import PhotoAlbum from "react-photo-album";
 import { Col, Container, Row } from "react-bootstrap";
 const photos = [
-  { src: "../assets/img/album/1.png", width: 320, height: 318 },
-  { src: "../assets/img/album/2.png", width: 320, height: 518 },
-  { src: "../assets/img/album/3.png", width: 320, height: 183 },
-  { src: "../assets/img/album/4.png", width: 320, height: 142 },
-  { src: "../assets/img/album/5.png", width: 320, height: 318 },
-  { src: "../assets/img/album/6.png", width: 320, height: 318 },
-  { src: "../assets/img/album/7.png", width: 320, height: 318 },
-  { src: "../assets/img/album/8.png", width: 320, height: 318 },
-  { src: "../assets/img/album/9.png", width: 320, height: 363 },
-  { src: "../assets/img/album/10.png", width: 320, height: 378 },
-  { src: "../assets/img/album/11.png", width: 320, height: 241 },
+  { src: "/src/assets/img/album/1.png", width: 320, height: 318 },
+  { src: "/src/assets/img/album/2.png", width: 320, height: 518 },
+  { src: "/src/assets/img/album/3.png", width: 320, height: 183 },
+  { src: "/src/assets/img/album/4.png", width: 320, height: 142 },
+  { src: "/src/assets/img/album/5.png", width: 320, height: 318 },
+  { src: "/src/assets/img/album/6.png", width: 320, height: 318 },
+  { src: "/src/assets/img/album/7.png", width: 320, height: 318 },
+  { src: "/src/assets/img/album/8.png", width: 320, height: 318 },
+  { src: "/src/assets/img/album/9.png", width: 320, height: 363 },
+  { src: "/src/assets/img/album/10.png", width: 320, height: 378 },
+  { src: "/src/assets/img/album/11.png", width: 320, height: 241 },
 ];
 export default function Gallerys() {
   useEffect(() => {
