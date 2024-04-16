@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import { Col, Container, Row } from 'react-bootstrap'
 import heroRImg from '../assets/img/heroRightImg.png';
+import heroRBG from '../assets/img/HeroRImgShap.png';
 import sociallogo3 from '../assets/img/sociallogo3.svg';
 import sociallogo4 from '../assets/img/sociallogo4.svg';
 export default function Banner(){
@@ -42,6 +43,7 @@ export default function Banner(){
                         </Col>
                         <Col lg={5} md={6}  className='d-none d-md-block'>
                             <div className="heroRImg">
+                                <img className='heroRBg' src={heroRBG} alt="" />
                                <img src={heroRImg} alt="" />
                             </div>
                         </Col>

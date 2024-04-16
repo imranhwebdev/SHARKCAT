@@ -16,8 +16,8 @@ export default function RoadMap() {
             <Row>
                 <Col>
                     <div className="section-title text-center">
-                        <h2 data-aos="fade-up">Our Roadmap</h2>
-                        <p  data-aos="fade-up">This roadmap outlines our journey to exciting milestones, including listings on major exchanges. Let's pave the way for innovative developments.</p>
+                        <h2  data-aos="fade-up" data-aos-duration="1600">Our Roadmap</h2>
+                        <p   data-aos="fade-up" data-aos-duration="2000">This roadmap outlines our journey to exciting milestones, including listings on major exchanges. Let's pave the way for innovative developments.</p>
                     </div>
                 </Col>
             </Row>

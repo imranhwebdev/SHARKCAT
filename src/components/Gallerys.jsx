@@ -38,18 +38,18 @@ export default function Gallerys() {
       <Container>
         <Row>
           <Col>
-            <div className="section-title text-center" data-aos="fade-up">
-              <h2>Sharkcat Gallery</h2>
+            <div className="section-title text-center">
+              <h2  data-aos="fade-up"  data-aos-duration="1800">Sharkcat Gallery</h2>
             </div>
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col  data-aos="fade-up"  data-aos-duration="2200">
             <PhotoAlbum layout="masonry" photos={photos}   columns={(containerWidth) => {
                   if (containerWidth < 479) return 2;
                   if (containerWidth < 767) return 3;
                   return 4;
-                }}  />
+                }} />
           </Col>
         </Row>
       </Container>
