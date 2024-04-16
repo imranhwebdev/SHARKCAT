@@ -1,0 +1,161 @@
+.howtobuy{
+    &-area{
+        position: relative;
+        z-index: 1;
+        padding-top: 245px;
+        padding-bottom: 210px;
+        @include sm{
+            padding-top: 150px;
+        }
+        .section-title{
+            h2{ 
+                word-spacing: -18px;
+                @include sm{
+                    font-size: 40px;
+                }
+            }
+        }
+        .vertical-timeline-element--work{
+            h3{
+                color: var(--Black, #0E0E0D);
+                font-family: "Lilita One";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%; /* 35.2px */
+                text-transform: uppercase;;
+                @include sm{
+                    font-size: 16px;
+                }
+            }
+            ul{
+                li{
+                    color: var(--Black, #0E0E0D);
+                    font-family: Kanit;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 33px */
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+.vertical-timeline{
+    margin-top: 160px;
+}
+.vertical-timeline::before {
+    width: 1px;
+}
+.vertical-timeline--two-columns .vertical-timeline-element-content{
+    border-radius: 24px;
+    border: 1px solid var(--Black, #0E0E0D);
+    background: var(--Primary, #00F6FF);
+    box-shadow: 4px 4px 0px 0px #404141;
+    padding: 40px;
+}
+.vertical-timeline--two-columns .vertical-timeline-element-icon {
+ display: none;
+}
+.howtobuy-area .vertical-timeline-element--work:nth-child(even) .vertical-timeline-element-icon {
+   display: none;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content-arrow{
+    display: none;
+}
+
+.line {
+    width: 70px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    right: -67px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.howtobuy-area .vertical-timeline-element--work:nth-child(even) .number{
+    left: -23px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.howtobuy-area .vertical-timeline-element--work:nth-child(even) .line {
+    left: -68px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+
+.vertical-timeline-element {
+    margin:0;
+}
+
+
+@media(max-width:480px){
+    .vertical-timeline-element-content.bounce-in {
+        max-width: 403px;
+    }
+}
+
+@media only screen and (max-width: 1169px){
+    .vertical-timeline.vertical-timeline--two-columns {
+        max-width: 767px;
+        &::before{
+            display: none;
+        }
+    }
+    .vertical-timeline-element-content{
+        margin-bottom: 70px;
+    }
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        width: 67px;
+        height: 60px;
+        left: 50%;
+        margin-left: -69px;
+        border: 0;
+        height: 0;
+        color: #fff;
+        border: 0px solid #fff;
+        border-radius: 0;
+        top: 50%;
+    }
+    .timelinelogo {
+        position: absolute;
+        left: 40px;
+        top: -60px !important;
+        max-width: 90px;
+        height: 150px;
+        img{
+            max-width: 90px;
+        }
+    }
+    .vertical-timeline {
+        margin-top: 60px !important;
+    }
+    .howtobuy-area .vertical-timeline-element--work .line {
+        display: none;
+    }
+}
+@media(min-width:1170px){
+    .howtobuy-area .vertical-timeline-element--work:nth-child(2){
+        margin-top: -20px;
+    }
+    
+    .howtobuy-area .vertical-timeline-element--work:nth-child(4){
+        margin-top: -50px;
+    }
+}
+
+
+
+@media (min-width:1170px) and (max-width:1280px){
+    .vertical-timeline.vertical-timeline--two-columns {
+        width: 1170px;
+    }
+    .vertical-timeline::before {
+        top: 204px;
+        height: 64.4%;
+    }
+}

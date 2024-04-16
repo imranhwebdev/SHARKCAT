@@ -31,7 +31,7 @@ export default function About() {
                     <ReactPlayer
                       light={videoPoster}
                       key={key}
-                      url={'https://www.youtube.com/watch?v=GxiaFOHjYQQ'} 
+                      url={'https://www.youtube.com/watch?si=Fh9sNKEKzNujM3v9&v=2v2jNiLN5mk&feature=youtu.be'} 
                       playing={true}
                       loop={true}
                       width="100%"

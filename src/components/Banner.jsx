@@ -22,7 +22,7 @@ export default function Banner(){
         },
     ];
     return(
-        <div className="banner">
+        <div className="banner" id='hero'>
             <div className="banner-wrapper">
                 <Container>
                     <Row className='align-items-center'>

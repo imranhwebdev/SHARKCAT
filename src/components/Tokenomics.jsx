@@ -11,7 +11,7 @@ export default function Tokenomics() {
         });
       }, []);
   return (
-    <section className='tokenomics-area'>
+    <section className='tokenomics-area' id='tokenomics'>
         <figure className='Pattern'>
             <img src={Pattern} alt="" />
         </figure>

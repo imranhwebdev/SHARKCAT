@@ -48,9 +48,10 @@ const  twitter = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
               </button>
             </div>
             <ul className="main_menu d-lg-flex align-items-center">
+              <Link to="/" onClick={scrollToTop} className='heading-link' spy={true} smooth={true} offset={-150} duration={170} >Home</Link>
               <Link to="about" className='heading-link' spy={true} smooth={true} offset={-150} duration={170} >About</Link>
-              <Link to="howtobuy" className='heading-link' spy={true} smooth={true} offset={-150} duration={170} >How to buy</Link>
-              <Link to="tokenomics" className='heading-link' spy={true} smooth={true} offset={-150} duration={50} >MEOWNOMICS</Link>
+              <Link to="tokenomics" className='heading-link' spy={true} smooth={true} offset={-150} duration={170} >Tokenomics</Link>
+              <Link to="roadmap" className='heading-link' spy={true} smooth={true} offset={-150} duration={50} >Roadmap</Link>
             </ul>
             
             <ul className="social-links d-md-none">
