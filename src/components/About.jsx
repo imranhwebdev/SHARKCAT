@@ -46,13 +46,14 @@ export default function About() {
           <Col xs={12}>
             <div className='player-wrapper' data-aos="fade-up" data-aos-duration="1600">
                     <ReactPlayer
+                      className="video_player"
                       light={videoPoster}
                       key={key}
                       url={'https://www.youtube.com/watch?si=Fh9sNKEKzNujM3v9&v=2v2jNiLN5mk&feature=youtu.be'} 
                       playing={true}
                       loop={true}
                       width="100%"
-                      height="717px"
+                      height="auto"
                       style={{ maxWidth: '100%', height: 'auto' }}
                       muted={true}  // Set muted to true for autoplay
                       onEnded={handleVideoEnded}

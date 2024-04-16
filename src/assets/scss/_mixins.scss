@@ -85,11 +85,8 @@
     @include lg {
         font-size: 50px;
     }
-    @include md {
+    @include mmd {
         font-size: 45px;
-    }
-    @include sm {
-        font-size: 40px;
     }
 }
 

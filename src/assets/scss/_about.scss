@@ -1,9 +1,16 @@
 .about{
     padding-top: 119px;
     padding-bottom: 120px;
+    @include sm{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
     & .player-wrapper{
         position: relative;
         margin-top: 55px;
+        @include sm{
+            margin-top: 25px;
+        }
     }
     .section-title{
         max-width: 709px;
@@ -21,5 +28,19 @@
     }
     @include ssm{
         height: 200px;
+    }
+}
+
+@media(min-width:767px) and (max-width:992px){
+    .video_player {
+        height: 400px !important;
+    }
+}
+
+.react-player__preview {
+    svg{
+        @include sm{
+            max-width: 280px;
+        }
     }
 }

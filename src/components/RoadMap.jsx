@@ -33,8 +33,7 @@ export default function RoadMap() {
                         <li>Presale</li>
                     </ul>
                 </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work">
+                <VerticalTimelineElement className="vertical-timeline-element--work">
                     <span className='roadmapDot'> <img src={roadmapDot} alt="" /></span>
                     <span className='line'></span>
                     <h3 className="vertical-timeline-element-title">PHASE 2</h3>

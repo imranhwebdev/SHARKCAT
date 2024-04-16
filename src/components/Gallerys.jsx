@@ -22,9 +22,9 @@ const photos = [
   { src: img_5, width: 320, height: 318 },
   { src: img_6, width: 320, height: 363 },
   { src: img_7, width: 320, height: 318 },
-  { src: img_11, width: 320, height: 419 },
+  { src: img_11, width: 320, height: 416 },
   { src: img_10, width: 320, height: 378 },
-  { src: img_8, width: 320, height: 318 },
+  { src: img_8, width: 320, height: 330 },
   { src: img_9, width: 320, height: 241 },
 ];
 export default function Gallerys() {
@@ -45,7 +45,11 @@ export default function Gallerys() {
         </Row>
         <Row>
           <Col>
-            <PhotoAlbum layout="masonry" photos={photos}  columns={4}  />
+            <PhotoAlbum layout="masonry" photos={photos}   columns={(containerWidth) => {
+                  if (containerWidth < 479) return 2;
+                  if (containerWidth < 767) return 3;
+                  return 4;
+                }}  />
           </Col>
         </Row>
       </Container>
