@@ -14,11 +14,11 @@ export default function Banner(){
       const socialLinks = [
         { 
             icon: sociallogo3, 
-            href: 'https://google.com' 
+            href: 'https://www.jupiter.ag/' 
         },
         { 
             icon: sociallogo4, 
-            href: 'https://google.com' 
+            href: 'https://raydium.io/' 
         },
     ];
     return(

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import PhotoAlbum from "react-photo-album";
 import { Col, Container, Row } from "react-bootstrap";
 const photos = [
@@ -15,12 +16,17 @@ const photos = [
   { src: "/src/assets/img/album/11.png", width: 320, height: 241 },
 ];
 export default function Gallerys() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="gallery-area">
       <Container>
         <Row>
           <Col>
-            <div className="section-title text-center">
+            <div className="section-title text-center" data-aos="fade-up">
               <h2>Sharkcat Gallery</h2>
             </div>
           </Col>

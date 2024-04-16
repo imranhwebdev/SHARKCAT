@@ -21,15 +21,14 @@ const  twitter = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
             <Row>
                 <Col>
                     <div className="community-content text-center">
-                        <figure>
-                            {/* <img src={cmBG} alt="" /> */}
-                        </figure>
-                        <h2>Join our community</h2>
-                        <p>Join our vibrant Sharkcat community today to embark on an exciting journey of crypto adventures and feline fun!</p>
-                        <ul className="social-links d-none d-md-block">
-                            <li><a href="https://google.com">{telegram}</a></li>
-                            <li><a href="https://google.com">{twitter}</a></li>
-                        </ul>
+                        <div className="community-info">
+                          <h2>Join our community</h2>
+                          <p>Join our vibrant Sharkcat community today to embark on an exciting journey of crypto adventures and feline fun!</p>
+                          <ul className="social-links d-none d-md-block">
+                              <li><a href="https://google.com">{telegram}</a></li>
+                              <li><a href="https://google.com">{twitter}</a></li>
+                          </ul>
+                        </div>
                     </div>
                 </Col>
             </Row>

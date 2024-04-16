@@ -3,7 +3,7 @@ import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
+import roadmapDot from "../assets/img/roadmapDot.png"
 export default function RoadMap() {
     useEffect(() => {
         AOS.init({
@@ -11,13 +11,13 @@ export default function RoadMap() {
         });
       }, []);
   return (
-    <section className='howtobuy-area'>
+    <section className='howtobuy-area' id='roadmap'>
         <Container>
             <Row>
                 <Col>
                     <div className="section-title text-center">
                         <h2 data-aos="fade-up">Our Roadmap</h2>
-                        <p>This roadmap outlines our journey to exciting milestones, including listings on major exchanges. Let's pave the way for innovative developments.</p>
+                        <p  data-aos="fade-up">This roadmap outlines our journey to exciting milestones, including listings on major exchanges. Let's pave the way for innovative developments.</p>
                     </div>
                 </Col>
             </Row>
@@ -25,6 +25,7 @@ export default function RoadMap() {
             <VerticalTimeline>
                 <VerticalTimelineElement className="vertical-timeline-element--work">
                     <span className='line'></span>
+                    <span className='roadmapDot'> <img src={roadmapDot} alt="" /></span>
                     <h3 className="vertical-timeline-element-title">PHASE 1</h3>
                     <ul className='roadmap-list'>
                         <li>Launch on Solana</li>
@@ -33,9 +34,8 @@ export default function RoadMap() {
                     </ul>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                >
-                    
+                    className="vertical-timeline-element--work">
+                    <span className='roadmapDot'> <img src={roadmapDot} alt="" /></span>
                     <span className='line'></span>
                     <h3 className="vertical-timeline-element-title">PHASE 2</h3>
                     <ul className='roadmap-list'>
@@ -45,8 +45,8 @@ export default function RoadMap() {
                     </ul>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                >
+                    className="vertical-timeline-element--work">
+                    <span className='roadmapDot'> <img src={roadmapDot} alt="" /></span>
                     
                     <span className='line'></span>
                     <h3 className="vertical-timeline-element-title">PHASE 3</h3>
@@ -57,8 +57,8 @@ export default function RoadMap() {
                     </ul>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                >
+                    className="vertical-timeline-element--work">
+                    <span className='roadmapDot'> <img src={roadmapDot} alt="" /></span>
                     <span className='line'></span>
                     <h3 className="vertical-timeline-element-title">PHASE 4</h3>
                     <ul className='roadmap-list'>
