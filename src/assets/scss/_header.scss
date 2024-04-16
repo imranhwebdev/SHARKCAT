@@ -65,7 +65,7 @@
         }
         &:hover,
         &.active {
-           color: $black;
+           opacity: .5;
         }
     }
     &-actions {

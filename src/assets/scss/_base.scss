@@ -136,12 +136,25 @@ input::-webkit-inner-spin-button {
     line-height: 150%; 
     text-transform: uppercase;
     &:hover{
-
         background: $_1E1929;
         color: $white;
+    }
+    @include ssm{
+            padding: 14px 22px;
+            box-shadow: 3px 3px 0px 0px #000;
+            font-size: 18px;
     }
 }
 
 .react-photo-album--column{
     width: calc(25% - 16px) !important
+}
+
+.section-title{
+    p{
+        color: $white;
+        @include font-22;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
 }

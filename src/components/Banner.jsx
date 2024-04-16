@@ -32,7 +32,7 @@ export default function Banner(){
                                 <p data-aos="fade-up" data-aos-duration="1400">Sharkcat is a playful and innovative memecoin on the Solana network, featuring a cat-themed design and a vibrant community of meme enthusiasts.</p>
                                 <div className="btn-with-social" data-aos="fade-up" data-aos-duration="1600" data-aos-offset="0">
                                     <a href="#" className="base-btn">Buy Now</a>
-                                    <ul className="social-links mt-4 mt-sm-0">
+                                    <ul className="social-links">
                                         {socialLinks.map((link, index) => (
                                             <li key={index}><a href={link.href} target="_blank"><img src={link.icon} alt="" /></a></li>
                                         ))}
@@ -40,7 +40,7 @@ export default function Banner(){
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={5} md={6}>
+                        <Col lg={5} md={6}  className='d-none d-md-block'>
                             <div className="heroRImg">
                                <img src={heroRImg} alt="" />
                             </div>
