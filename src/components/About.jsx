@@ -39,7 +39,7 @@ export default function About() {
                       style={{ maxWidth: '100%', height: 'auto' }}
                       muted={true}  // Set muted to true for autoplay
                       onEnded={handleVideoEnded}
-                      controls={false} 
+                      controls={true} 
                     />
             </div>
           </Col>

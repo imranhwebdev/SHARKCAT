@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './Footer'
-import Fbg from "../assets/img/footer-BG.png" 
 export default function Comunity() {
     const telegram = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <g clip-path="url(#clip0_254_427)">
@@ -18,9 +17,6 @@ const  twitter = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
 </svg>;
   return (
     <div className='community-area'>
-        <figure className='Fbg'>
-            <img src={Fbg} alt="" />
-        </figure>
         <Container>
             <Row>
                 <Col>

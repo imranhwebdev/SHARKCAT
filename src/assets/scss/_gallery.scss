@@ -1,0 +1,16 @@
+.gallery-area{
+    padding-top: 119px;
+    padding-bottom: 119px;
+    position: relative;
+    z-index: 1;
+    background-image: url('../img/gallery-bg.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @include sm{
+        background-size: cover;
+    }
+    .section-title{
+        margin-bottom: 60px;
+    }
+}

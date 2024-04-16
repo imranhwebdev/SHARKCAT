@@ -34,6 +34,7 @@ h2{
     @include font-84;
     font-weight: 400;
     text-transform: uppercase;
+    text-shadow: 3px 3px 0px #141515;
 }
 h3{
     @include font-40
@@ -141,3 +142,6 @@ input::-webkit-inner-spin-button {
     }
 }
 
+.react-photo-album--column{
+    width: calc(25% - 16px) !important
+}
