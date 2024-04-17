@@ -18,7 +18,15 @@
         margin-bottom: 10px;
     }
 }
-
+.video_player{
+    height: 700px;
+    @include sm{
+        height: 300px !important; 
+    }
+    @include ssm{
+        height: 200px;
+    }
+}
 .react-player__preview{
     background-repeat: no-repeat !important;
     background-position: center center !important;

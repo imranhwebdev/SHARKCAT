@@ -19,6 +19,9 @@
         z-index: 1;
         overflow: hidden;
         margin-bottom: 60px;
+        @include md{
+            padding: 90px 45px;
+        }
         @include sm{
             padding: 60px 30px;
         }
@@ -62,6 +65,11 @@
             margin-top: 48px;
             @include sm{
                 margin-top: 25px;
+            }
+            li{
+                a{
+                    max-width: 84px !important;
+                }
             }
         }
     }

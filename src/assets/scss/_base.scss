@@ -124,7 +124,37 @@ input::-webkit-inner-spin-button {
         }
     }
 }
-
+.community-area{
+    .social-links{
+        li{
+            a {
+                width: 84px;
+                height: 84px;
+                box-shadow: 5.169px 5.169px 0px 0px #000;
+                @include sm{
+                    width: 60px;
+                    height: 60px;
+                    box-shadow: 3px 3px 0px 0px #000;
+                }
+                svg{
+                    width: 40px;
+                    height: 40px;
+                    @include sm{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                &:hover{
+                    background: #000;
+                    box-shadow: 3px 3px 0px 0px #fff;
+                    svg path{
+                        fill:#fff !important;
+                    }
+                }
+            }
+        }
+    }
+}
 .base-btn{
     border-radius: 50px;
     background: var(--Primary, #00F6FF);

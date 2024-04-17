@@ -54,7 +54,7 @@ const  twitter = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
               <Link to="roadmap" className='heading-link' spy={true} smooth={true} offset={-150} duration={50} >Roadmap</Link>
             </ul>
             
-            <ul className="social-links d-md-none">
+            <ul className="social-links d-lg-none">
               <li><a href="https://google.com">{telegram}</a></li>
               <li><a href="https://google.com">{twitter}</a></li>
             </ul>

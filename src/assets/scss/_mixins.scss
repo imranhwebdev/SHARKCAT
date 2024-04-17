@@ -135,13 +135,10 @@
     font-size: 22px;
     line-height: 150%;
     @include lg {
-        font-size: 18px;
+        font-size: 20px;
     }
-    @include md {
+    @include mmd {
         font-size: 18px;
-    }
-    @include sm {
-        font-size: 16px;
     }
 }
 

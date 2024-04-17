@@ -41,7 +41,7 @@ export default function Banner(){
                                 </div>
                             </div>
                         </Col>
-                        <Col lg={5} md={6}  className='d-none d-md-block'>
+                        <Col lg={5} md={6}  className='mt-5 mt-md-0'>
                             <div className="heroRImg">
                                 <img className='heroRBg' src={heroRBG} alt="" />
                                <img src={heroRImg} alt="" />

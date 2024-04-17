@@ -115,7 +115,7 @@ ul.social-links a {
     &:hover path{
        fill: $white !important
     }
-    @include ssm{
+    @include sm{
         margin-top: 20px;
     }
 }
