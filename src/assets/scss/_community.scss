@@ -35,9 +35,6 @@
             background-position: bottom center;
             z-index: -2;
             border-radius: 30px;
-            @include sm{
-                background-size: cover;
-            }
         }
         &::after{
             position: absolute;
@@ -63,6 +60,9 @@
         }
         .social-links{
             margin-top: 48px;
+            @include sm{
+                margin-top: 25px;
+            }
         }
     }
     

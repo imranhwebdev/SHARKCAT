@@ -30,7 +30,7 @@ const  twitter = <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
                         <div className="community-info">
                           <h2 data-aos="fade-up" data-aos-duration="1200">Join our community</h2>
                           <p data-aos="fade-up" data-aos-duration="1600">Join our vibrant Sharkcat community today to embark on an exciting journey of crypto adventures and feline fun!</p>
-                          <ul className="social-links d-none d-md-block" data-aos="fade-up" data-aos-duration="2000">
+                          <ul className="social-links" data-aos="fade-up" data-aos-duration="2000">
                               <li><a href="https://google.com">{telegram}</a></li>
                               <li><a href="https://google.com">{twitter}</a></li>
                           </ul>
