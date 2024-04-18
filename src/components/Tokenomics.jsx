@@ -16,7 +16,7 @@ export default function Tokenomics() {
             <img src={Pattern} alt="" />
         </figure>
         <Container>
-            <Row>
+            <Row className="align-items-center">
                 <Col lg={6} className='order-2 order-lg-1'>
                     <div className="tokenomics-content">
                         <h2  data-aos="fade-up" data-aos-duration="1200">Tokenomics</h2>

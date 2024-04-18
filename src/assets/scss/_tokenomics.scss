@@ -47,3 +47,10 @@
         }
     }
 }
+.TokenRImg{
+    max-width: 533px;
+    margin-left: auto;
+    @include mmd{
+        margin-right: auto;
+    }
+}
