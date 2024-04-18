@@ -7,7 +7,6 @@ import Tokenomics from './components/Tokenomics'
 import Comunity from './components/Comunity'
 import Gallery from './components/Gallerys'
 import RoadMap from './components/RoadMap'
-import CatGallery from './components/CatGallery'
 
 function App() {
 
@@ -19,7 +18,6 @@ function App() {
       <Tokenomics />
       <MarqueeOne />
       <Gallery />
-      <CatGallery />
       <RoadMap />
       <Comunity />
     </>

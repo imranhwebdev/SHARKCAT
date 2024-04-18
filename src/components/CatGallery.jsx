@@ -64,6 +64,21 @@ export default function CatGallery() {
                         watchSlidesProgress={true}
                         modules={[FreeMode, Navigation, Thumbs]}
                         className="galleryPagination"
+                            breakpoints={{
+                                '@0.00': {
+                                slidesPerView: 2,
+                                spaceBetween: 10,
+                                },
+                                '@0.75': {
+                                slidesPerView: 3,
+                                },
+                                '@1.00': {
+                                slidesPerView: 4,
+                                },
+                                '@1.50': {
+                                slidesPerView: 5,
+                                },
+                            }}
                     >
                         { galleryImgs.map((item, index) => (
                         <SwiperSlide key={index}>
