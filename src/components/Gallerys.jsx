@@ -1,7 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import PhotoAlbum from "react-photo-album";
 import { Col, Container, Row } from "react-bootstrap";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 import img_1 from '../assets/img/album/1.png';
 import img_2 from '../assets/img/album/2.png';
 import img_3 from '../assets/img/album/3.png';
@@ -33,6 +40,7 @@ export default function Gallerys() {
       duration: 1000,
     });
   }, []);
+  const [index, setIndex] = useState(-1);
   return (
     <div className="gallery-area">
       <Container>
@@ -49,7 +57,16 @@ export default function Gallerys() {
                   if (containerWidth < 479) return 2;
                   if (containerWidth < 767) return 3;
                   return 4;
-                }} />
+                }} targetRowHeight={150} onClick={({ index }) => setIndex(index)}/>
+
+
+              <Lightbox
+                slides={photos}
+                open={index >= 0}
+                index={index}
+                close={() => setIndex(-1)}
+                plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+              />
           </Col>
         </Row>
       </Container>

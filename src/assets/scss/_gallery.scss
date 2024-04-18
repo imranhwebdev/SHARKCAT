@@ -16,3 +16,9 @@
         margin-bottom: 60px;
     }
 }
+.yarl__container {
+    background-color: var(--yarl__container_background_color, var(--yarl__color_backdrop, #000000c2));
+}
+.yarl__portal_open {
+    z-index: 999999;
+}
