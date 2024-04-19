@@ -83,7 +83,7 @@ export default function Banner() {
                                     <p className='mb-3 w-100'>Charts</p>
                                     <div className="d-flex flex-wrap align-items-center gap-3 gap-lg-3">
                                         {socialbtn.map((item, index) => (
-                                            <a href={item.href} target='_blank' key={index} className="base-btn border d-inline-flex border-2 justify-content-center" data-aos="fade-up" data-aos-duration={`1${index+3}00`}>
+                                            <a href={item.href} target='_blank' key={index} className="base-btn border d-inline-flex border-2 justify-content-center" data-aos="fade-up" data-aos-duration={`1${index+3}00`} data-aos-offset="10">
                                                 <span dangerouslySetInnerHTML={{ __html: item.icon }}></span>
                                                 {item.name}
                                             </a>
