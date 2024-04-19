@@ -1,5 +1,5 @@
-.community{
-    &-area{
+.community {
+    &-area {
         padding-top: 130px;
         padding-bottom: 40px;
         position: relative;
@@ -8,24 +8,24 @@
         background-position: bottom center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        @include sm{
+        @include sm {
             background-size: cover;
             padding-top: 100px;
         }
     }
-    &-content{
+    &-content {
         padding: 109px 0;
         position: relative;
         z-index: 1;
         overflow: hidden;
         margin-bottom: 60px;
-        @include md{
+        @include md {
             padding: 90px 45px;
         }
-        @include sm{
+        @include sm {
             padding: 60px 30px;
         }
-        &::before{
+        &::before {
             position: absolute;
             content: "";
             top: 0;
@@ -39,7 +39,7 @@
             z-index: -2;
             border-radius: 30px;
         }
-        &::after{
+        &::after {
             position: absolute;
             content: "";
             top: 0;
@@ -51,31 +51,66 @@
             background-size: 100% 100%;
             background-position: bottom center;
             z-index: -1;
-            @include sm{
+            @include sm {
                 display: none
             }
         }
-        p{
+        p {
             @include font-22;
-            line-height: 150%; 
+            line-height: 150%;
             text-transform: uppercase;
             margin-top: 15px;
         }
-        .social-links{
+        .social-links {
             margin-top: 48px;
-            @include sm{
+            @include sm {
                 margin-top: 25px;
             }
-            li{
-                a{
+            li {
+                a {
                     max-width: 84px !important;
                 }
             }
         }
     }
-    
-    &-info{
+    &-info {
         max-width: 880px;
         margin-inline: auto;
+    }
+}
+
+.swap {
+    background-color: #0C0D0D;
+    --padding-y: 120px;
+    --padding-x: 0;
+    padding: var(--padding-y) var(--padding-x);
+    @include lg {
+        --padding-y: 100px;
+    }
+    @include md {
+        --padding-y: 80px;
+    }
+    @include sm {
+        --padding-y: 60px;
+    }
+    --padding-y: 120px;
+    --padding-x: 0;
+    padding: var(--padding-y) var(--padding-x);
+    @include lg {
+        --padding-y: 100px;
+    }
+    @include md {
+        --padding-y: 80px;
+    }
+    @include sm {
+        --padding-y: 60px;
+    }
+    &-wrap {
+        border-radius: 32px;
+        overflow: hidden;
+        padding-bottom: 55%;
+        @include mmd {
+            padding-bottom: 100%;
+        }
     }
 }
