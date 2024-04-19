@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Handjet:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Quicksand:wght@300..700&family=Sigmar+One&display=swap');
-html, html body{
+html,
+html body {
     overflow-x: hidden;
 }
-  
+
 body {
     font-family: "Kanit", sans-serif;
     @include font-22;
@@ -24,23 +25,25 @@ h5,
 h6 {
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
-};
+}
 
-h1{
+;
+h1 {
     @include font-100
 }
 
-h2{
+h2 {
     @include font-84;
     font-weight: 400;
     text-transform: uppercase;
     text-shadow: 3px 3px 0px #141515;
 }
-h3{
+
+h3 {
     @include font-40
 }
 
-h4{
+h4 {
     @include font-40
 }
 
@@ -52,9 +55,11 @@ img {
     width: 100%;
     height: auto;
 }
-figure{
+
+figure {
     margin-bottom: 0;
 }
+
 ul,
 ol {
     list-style: none;
@@ -98,13 +103,13 @@ input::-webkit-inner-spin-button {
 }
 
 .container {
-   max-width: 1370px;
-   padding-left: 15px;
-   padding-right: 15px;
+    max-width: 1370px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.social-links{
-    li{
+.social-links {
+    li {
         display: inline-block;
         margin-right: 23px;
         a {
@@ -124,38 +129,40 @@ input::-webkit-inner-spin-button {
         }
     }
 }
-.community-area{
-    .social-links{
-        li{
+
+.community-area {
+    .social-links {
+        li {
             a {
                 width: 84px;
                 height: 84px;
                 box-shadow: 5.169px 5.169px 0px 0px #000;
-                @include sm{
+                @include sm {
                     width: 60px;
                     height: 60px;
                     box-shadow: 3px 3px 0px 0px #000;
                 }
-                svg{
+                svg {
                     width: 40px;
                     height: 40px;
-                    @include sm{
+                    @include sm {
                         width: 30px;
                         height: 30px;
                     }
                 }
-                &:hover{
+                &:hover {
                     background: #000;
                     box-shadow: 3px 3px 0px 0px #fff;
-                    svg path{
-                        fill:#fff !important;
+                    svg path {
+                        fill: #fff !important;
                     }
                 }
             }
         }
     }
 }
-.base-btn{
+
+.base-btn {
     border-radius: 50px;
     background: var(--Primary, #00F6FF);
     padding: 16px 32px;
@@ -163,21 +170,22 @@ input::-webkit-inner-spin-button {
     color: #0E0E0D;
     font-size: 22px;
     font-weight: 400;
-    line-height: 150%; 
+    line-height: 150%;
     text-transform: uppercase;
-    &:hover{
+    cursor: pointer;
+    &:hover {
         background: $_1E1929;
         color: $white;
     }
-    @include ssm{
-            padding: 14px 22px;
-            box-shadow: 3px 3px 0px 0px #000;
-            font-size: 18px;
+    @include ssm {
+        padding: 14px 22px;
+        box-shadow: 3px 3px 0px 0px #000;
+        font-size: 18px;
     }
 }
 
-.section-title{
-    p{
+.section-title {
+    p {
         color: $white;
         @include font-22;
         line-height: 150%;
